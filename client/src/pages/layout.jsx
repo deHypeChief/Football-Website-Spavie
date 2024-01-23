@@ -1,8 +1,8 @@
 import '../styles/global.css'
 
-import Navbar from "../components/navBar/navbard";
 import Home from "./home";
 import Footer from '../components/footer/footer';
+import Navbar from '../components/navbar/navbar'
 import Enroll from './enroll';
 
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
