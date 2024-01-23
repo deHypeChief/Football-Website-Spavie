@@ -1,0 +1,84 @@
+.hero{
+    height: 65vh;
+    background: url(../assets/images/footballField.png) no-repeat; 
+    background-position: right;
+}
+.heroOverlay{
+    padding: var(--global-padding);
+    height: 100%;
+    background: linear-gradient(to right, var(--color-primary) 40%, rgba(52, 152, 219, 0));
+}
+.textContent{
+    padding-top: 15vh;
+}
+.textContent p{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: -10px;
+}
+
+
+/* mission */
+.missionTextSection{
+    padding: var(--global-padding);
+    padding-top: 50px;
+}
+.missionTextSection h2{
+    max-width: 60vw;
+}
+
+
+/* grow */
+.growContent{
+    padding: var(--global-padding);
+    padding-top: 50px;
+}
+.growCards{
+    display: flex;
+    justify-content: space-between;
+}
+.baseImgBox-grow{
+    background: black;
+    height: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+/* enroll */
+.enroll{
+    padding: 100px 0;
+    display: flex;
+}
+.text-enroll hr{
+    width: 20vw;
+    margin: 30px 0;
+}
+.t1{
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: -30px;
+}
+.enrollHead{
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+.enrollButtom{
+    padding-top: 60px;
+}
+.enrollBoy{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.enrollDate{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.enrollButtom p:nth-child(2){
+    padding-top: 50px;
+    font-size: 1rem;
+}
+.erollReq{
+    padding-top: 30px;
+}

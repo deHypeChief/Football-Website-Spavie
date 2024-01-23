@@ -1,0 +1,53 @@
+.heroOverlay-e{
+    padding: var(--global-padding);
+    height: 100%;
+    background: var(--color-primary);
+}
+.hero-e{
+    height: 65vh;
+    background: url(../assets/images/footballField.png) no-repeat; 
+    background-position: right;
+}
+.textContent-e{
+    padding-top: 25vh;
+}
+
+
+.joinus{
+    padding: var(--global-padding);
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+.joinus h3{
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+form{
+    padding: 70px;
+    background: gray;
+    max-width: 60vw;
+}
+
+.divForm{
+    padding-top: 50px;
+}
+
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+.inputWrap p{
+    font-size: 1rem;
+}
+.inputWrap input{
+    width: 250px;
+    padding: 10px 10px;
+    font-size: 1rem;
+}
+.inputWrap select{
+    width: 250px;
+    padding: 10px 10px;
+    font-size: 1rem;
+}

@@ -1,0 +1,37 @@
+:root{
+    width: 100%;
+    overflow-x: hidden;
+
+    /* variables */
+    --global-padding: 0 150px;
+    --color-primary: #FBD500;
+    --text-primary-color: #fff;
+    --text-secondary-color: #000;
+
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+/* general */
+main{
+    min-height: 100vh;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+h2{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+

@@ -1,0 +1,27 @@
+nav{
+    padding: var(--global-padding);
+    background: black;
+    height: 70px;
+    color: var(--text-primary-color);
+}
+
+.navWrap{
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    background: black;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.other{
+    display: flex;
+    gap: 30px;
+}

@@ -1,0 +1,17 @@
+{
+   "name": "Sparvi Football Website",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "server": "pnpm -C ./server run start",
+      "client": "pnpm -C ./client run dev",
+      "start": "concurrently  \"pnpm run server\"  \"pnpm run client\""
+   },
+   "keywords": [],
+   "author": "",
+   "license": "MIT",
+   "dependencies": {
+      "concurrently": "^8.2.2"
+   }
+}
