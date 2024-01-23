@@ -16,7 +16,7 @@ const connectToMongoDB = () => {
 
   db.on('error', (error) => {
     console.error('MongoDB connection error:', error)
-    setTimeout(connectToMongoDB, 10000);
+    setTimeout(connectToMongoDB, 20000);
   });
 
   db.once('open', () => {
@@ -25,7 +25,6 @@ const connectToMongoDB = () => {
 };
 
 connectToMongoDB();
-
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
