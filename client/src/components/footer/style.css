@@ -38,5 +38,10 @@ footer p{
 .imgfooterBox{
     height: 100px;
     width: 100px;
-    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgfooterBox img{
+    width: 60%;
 }

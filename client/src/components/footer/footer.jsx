@@ -3,14 +3,14 @@ import { FaTiktok } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { ImFacebook } from "react-icons/im";
 import './style.css'
-
+import logo from "../../assets/icons/Black Logo Png.png"
 export default function Footer() {
     return (
         <>
             <section className="footerTop" id="contact">
                 <div className="footerBox">
                     <div className="imgfooterBox">
-                        
+                        <img src={logo} alt="" />
                     </div>
                 </div>
                 <div className="footerBox">

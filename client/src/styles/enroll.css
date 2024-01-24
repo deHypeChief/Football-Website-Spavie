@@ -2,6 +2,14 @@
     padding: var(--global-padding);
     height: 100%;
     background: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+.heroOverlay-e img{
+    height: 400px;
+    transform: translateY(40px);
 }
 .hero-e{
     height: 65vh;
@@ -14,9 +22,22 @@
 
 
 .joinus{
+    background: url(../assets/images/footballField.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.ballerEnroll{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+}
+.Join-form{
+    z-index: 1;
     padding: var(--global-padding);
     padding-top: 100px;
     padding-bottom: 90px;
+    background: linear-gradient(rgba(0, 0, 0, 0.291), black);
 }
 .joinus h3{
     font-size: 3rem;
@@ -24,7 +45,7 @@
 }
 form{
     padding: 70px;
-    background: gray;
+    background: white;
     max-width: 60vw;
 }
 

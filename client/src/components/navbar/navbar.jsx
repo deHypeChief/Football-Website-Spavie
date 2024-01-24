@@ -1,7 +1,7 @@
 import './style.css'
 import Button from '../button/button.jsx'
 import { Link } from 'react-router-dom'
-
+import logo from '../../assets/icons/White Logo Png.png'
 
 export default function Navbar() {
     return (
@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="navWrap">
                 <Link to={'/'}>
                     <div className="logo">
-
+                        <img src={logo} alt="" />
                     </div>
                 </Link>
                 <div className="info">

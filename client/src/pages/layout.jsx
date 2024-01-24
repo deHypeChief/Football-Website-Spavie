@@ -5,21 +5,25 @@ import Footer from '../components/footer/footer';
 import Navbar from '../components/navbar/navbar'
 import Enroll from './enroll';
 
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
 
-export default function App(){
-    return(
+const queryClient = new QueryClient();
+
+export default function App() {
+    return (
         <>
-
-            <BrowserRouter>
-            <Navbar/>
-                <Routes>
-                    <Route path='/' element={<Home/>}/>
-                    <Route path='/enroll' element={<Enroll/>}/>
-                </Routes>
-            <Footer/>
-           </BrowserRouter>
-
+            <QueryClientProvider client={queryClient}>
+                <BrowserRouter>
+                    <Navbar />
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/enroll' element={<Enroll />} />
+                    </Routes>
+                    <Footer />
+                </BrowserRouter>
+            </QueryClientProvider>
         </>
     )
 }
