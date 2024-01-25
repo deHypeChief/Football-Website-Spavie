@@ -1,10 +1,19 @@
 import '../styles/about.css'
+import enrollHeroImg from '../assets/images/img13.png'
 
-export default function About(){
-    return(
+export default function About() {
+    return (
         <>
             <main>
-                <h1>About Page</h1>
+                <section className="hero-e">
+
+                    <div className="heroOverlay-e">
+                        <div className="textContent-e">
+                            <h1>About Us</h1>
+                        </div>
+                        <img src={enrollHeroImg} alt="" />
+                    </div>
+                </section>
             </main>
         </>
     )
