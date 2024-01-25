@@ -6,7 +6,7 @@
    "scripts": {
       "server": "pnpm -C ./server run start",
       "client": "pnpm -C ./client run dev",
-      "start": "concurrently  \"pnpm run server\"  \"pnpm run client\""
+      "start": "concurrently  \"pnpm run server\"  \"pnpm run client\"",
    },
    "keywords": [],
    "author": "",
