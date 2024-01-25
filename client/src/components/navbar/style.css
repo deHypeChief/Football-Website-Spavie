@@ -31,3 +31,25 @@ nav{
 .logo img{
     width: 60%;
 }
+
+@media screen and (max-width: 600px) {
+    nav{
+        padding: 0 15px;
+    }
+    .logo{
+        height: 80px;
+        width: 80px;
+    }
+    .info h3{
+        display: none;
+    }
+    .other {
+        gap: 10px;
+    }
+    .navWrap {
+        justify-content: space-between;
+    }
+    .info {
+        flex: initial;
+    }
+}

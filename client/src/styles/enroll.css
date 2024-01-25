@@ -31,6 +31,7 @@
     position: absolute;
     z-index: 0;
     right: 0;
+    display: none; /*imp*/
 }
 .Join-form{
     z-index: 1;
@@ -71,4 +72,32 @@ form{
     width: 250px;
     padding: 10px 10px;
     font-size: 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .heroOverlay-e {
+        flex-direction: column;
+    }
+    .heroOverlay-e img {
+        height: 354px;
+        transform: translateY(14px);
+    }
+    .textContent-e {
+        padding-top: 9vh;
+    }
+    form {
+        padding: 34px;
+        max-width: initial;
+    }
+    .inputWrap p {
+        font-size: 1rem;
+        padding-bottom: 15px;
+    }
+    .joinus h3 {
+        padding-bottom: 15px;
+    }
+    .hero-e{
+        height: fit-content;
+    }
 }

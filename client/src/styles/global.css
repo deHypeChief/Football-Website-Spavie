@@ -35,3 +35,20 @@ p{
     font-weight: 500;
 }
 
+
+@media screen and (max-width: 600px) {
+    :root{
+        width: 100%;
+
+        /* variables */
+        --global-padding: 0 30px;
+    
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}

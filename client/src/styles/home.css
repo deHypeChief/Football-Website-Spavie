@@ -2,6 +2,7 @@
     height: 65vh;
     background: url(../assets/images/footballField.png) no-repeat; 
     background-position: right;
+    background-size: cover;
 }
 .heroOverlay{
     display: flex;
@@ -154,4 +155,79 @@
 }
 .green-span{
     color: #3B7700;
+}
+
+
+
+@media screen and  (max-width: 600px){
+    .growCards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .textGrowBox {
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .baseImgBox-grow {
+        background: url(/src/assets/images/img2.png);
+        background-position: center;
+    }
+    .enrollOverlay { 
+        flex-direction: column-reverse;
+    }
+    .imgSection-enroll img {
+        height: 1031px;
+        margin-top: 22px;
+    }
+    .text-enroll{
+        text-align: center;
+    }
+    
+    .text-enroll hr {
+        width: 100%;
+        margin: 30px 0;
+    }
+    .enrollHead {
+        font-size: 3rem;
+        padding-top: 30px;
+    }
+    .imgSection-enroll {
+        margin-top: -528px;
+    }
+    .t1 {
+        padding-top: 80px;
+    }
+    .missionTextSection h2 {
+        max-width: initial;
+    }
+    .missImg {
+        margin-top: -110px;
+        background-position-x: -200px;
+        background-repeat: no-repeat;
+    }
+    .heroOverlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: var(--global-padding);
+        height: 100%;
+        background: linear-gradient(to bottom, var(--color-primary) 40%, rgba(52, 152, 219, 0));
+    }
+    .hero {
+        height: fit-content;
+    }
+    .textContent {
+        padding-bottom: 5vh;
+        padding-top: 6vh;
+    }
+    .textContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .enroll{
+        overflow-x: hidden;
+    }
 }
