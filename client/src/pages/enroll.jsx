@@ -9,7 +9,7 @@ import { useMutation } from 'react-query';
 
 const postFormData = async (formData) => {
     try {
-        const response = await axios.post('http://spavie-api.vercel.app/api/user/register', formData);
+        const response = await axios.post('https://spavie-api.vercel.app/api/user/register', formData);
         return response.data;
     } catch (error) {
         console.log(error);
