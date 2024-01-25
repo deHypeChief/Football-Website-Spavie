@@ -27,17 +27,34 @@ const connectToMongoDB = () => {
 connectToMongoDB();
 const PORT = process.env.PORT || 3000;
 
-// app.use(cors());
+
+var whitelist = ['http://localhost:5173/', 'https://sparvi-site.vercel.app']
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+
+
+// middleware
+app.use(cors(corsOptions));
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 
+// options
+app.options('/api/user/register', cors())
 
-
+// routes
 app.get('/', (req, res) => {
   res.send('Server is up and running')
 })
 app.use('/api/user', userRoute);
 
+// port
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
