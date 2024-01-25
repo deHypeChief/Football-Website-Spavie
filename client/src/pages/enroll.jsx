@@ -5,10 +5,11 @@ import enrollHeroImg from '../assets/images/img13.png'
 import ballImg from '../assets/images/img12.png'
 
 import { useMutation } from 'react-query';
+// import { Notify_Success } from '../components/Pop-notify/notify';
 
 const postFormData = async (formData) => {
     try {
-        const response = await axios.post('http://localhost:3000/api/user/register', formData);
+        const response = await axios.post('http://spavie-api.vercel.app/api/user/register', formData);
         return response.data;
     } catch (error) {
         console.log(error);
@@ -35,9 +36,13 @@ export default function Enroll() {
             await mutation.mutateAsync(data);
             // Form submitted successfully
             console.log('Form submitted successfully!');
+            alert("Your account has been created")
+
         } catch (error) {
             // Handle error
             console.error('Error submitting form:', error.message);
+            alert("Their was an error creating your account")
+
         }
     };
 

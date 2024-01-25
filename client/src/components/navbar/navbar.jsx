@@ -15,8 +15,8 @@ export default function Navbar() {
                 <div className="info">
                     <h3>Sparvi Football Academy</h3>
                     <div className="other">
-                        <Link to={'/enroll'}>
-                            <Button>Enroll</Button>
+                        <Link to={'/about'}>
+                            <Button>About Us</Button>
                         </Link>
                         <a href="#contact">
                             <Button type={'bttn-secondary'}>Contact Us</Button>
