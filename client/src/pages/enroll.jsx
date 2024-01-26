@@ -5,6 +5,7 @@ import enrollHeroImg from '../assets/images/img13.png'
 import ballImg from '../assets/images/img12.png'
 
 import { useMutation } from 'react-query';
+import { useNavigate } from 'react-router-dom';
 // import { Notify_Success } from '../components/Pop-notify/notify';
 
 const postFormData = async (formData) => {
@@ -25,6 +26,7 @@ const postFormData = async (formData) => {
 export default function Enroll() {
 
     const mutation = useMutation(postFormData);
+    const NavTo = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -42,6 +44,7 @@ export default function Enroll() {
             // Form submitted successfully
             console.log('Form submitted successfully!');
             alert("Your account has been created")
+            NavTo("/")
 
         } catch (error) {
             // Handle error
