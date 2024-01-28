@@ -1,20 +1,23 @@
-.hero{
+.hero {
     height: 65vh;
-    background: url(../assets/images/footballField.png) no-repeat; 
+    background: url(../assets/images/footballField.png) no-repeat;
     background-position: right;
     background-size: cover;
 }
-.heroOverlay{
+
+.heroOverlay {
     display: flex;
     justify-content: space-between;
     padding: var(--global-padding);
     height: 100%;
     background: linear-gradient(to right, var(--color-primary) 40%, rgba(52, 152, 219, 0));
 }
-.textContent{
+
+.textContent {
     padding-top: 15vh;
 }
-.textContent p{
+
+.textContent p {
     font-size: 2rem;
     font-weight: 200;
     margin-bottom: -10px;
@@ -22,25 +25,28 @@
 
 
 /* mission */
-.missionTextSection{
+.missionTextSection {
     padding: var(--global-padding);
     padding-top: 50px;
 }
-.missionTextSection h2{
+
+.missionTextSection h2 {
     max-width: 60vw;
 }
 
 
 /* grow */
-.growContent{
+.growContent {
     padding: var(--global-padding);
     padding-top: 50px;
 }
-.growCards{
+
+.growCards {
     display: flex;
     justify-content: space-between;
 }
-.baseImgBox-grow{
+
+.baseImgBox-grow {
     background: url(../assets/images/img2.png);
     height: 350px;
     margin-top: 100px;
@@ -50,64 +56,75 @@
 
 
 /* enroll */
-.enroll{
+.enroll {
     background: url('../assets/images/footballField.png');
     background-size: cover;
 }
-.enrollOverlay{
+
+.enrollOverlay {
     padding: 0px 0 0;
     display: flex;
     align-items: center;
     gap: 200px;
-    background: linear-gradient(rgba(0, 0, 0, 0.579) 20%, black );
+    background: linear-gradient(rgba(0, 0, 0, 0.579) 20%, black);
 }
-.imgSection-enroll{
+
+.imgSection-enroll {
     display: flex;
     height: 1000px;
     width: 600px;
     overflow: hidden;
 }
-.imgSection-enroll img{
+
+.imgSection-enroll img {
     height: 1300px;
     margin-top: -200px;
 }
 
-.text-enroll hr{
+.text-enroll hr {
     width: 20vw;
     margin: 30px 0;
 }
-.t2{
+
+.t2 {
     color: var(--text-primary-color);
 }
-.t1{
+
+.t1 {
     font-size: 3rem;
     font-weight: 200;
     margin-bottom: -30px;
     color: var(--color-primary);
 }
-.enrollHead{
+
+.enrollHead {
     font-size: 4.5rem;
     font-weight: 900;
     color: var(--text-primary-color);
 }
-.enrollButtom{
+
+.enrollButtom {
     padding-top: 60px;
 }
-.enrollBoy{
+
+.enrollBoy {
     font-size: 2rem;
     font-weight: 900;
     color: var(--color-primary);
 }
-.enrollDate{
+
+.enrollDate {
     font-size: 2rem;
     padding-bottom: 20px;
     color: var(--text-primary-color);
 }
-.enrollButtom p:nth-child(2){
+
+.enrollButtom p:nth-child(2) {
     padding-top: 50px;
     font-size: 1rem;
 }
-.erollReq{
+
+.erollReq {
     padding-top: 30px;
     color: var(--text-primary-color);
 }
@@ -116,95 +133,225 @@
 
 
 /* updates */
-.missImg{
+.missImg {
     background: url(../assets/images/img8.png);
     height: 600px;
     width: 100%;
 }
-.boxGrowText{
+
+.boxGrowText {
     margin-top: -50px;
 }
-.imgboxGrow{
+
+.imgboxGrow {
     height: 200px;
     width: 250px;
     overflow: hidden;
 }
-.imgboxGrow img{
+
+.imgboxGrow img {
     width: 100%;
 }
-.boxGrow img{
+
+.boxGrow img {
     width: 60%;
 }
-.textGrowBox{
+
+.textGrowBox {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.growIG{
+
+.growIG {
     height: 30px;
     width: 30px;
 }
-.textGrowBox img{
+
+.textGrowBox img {
     width: 100%;
 }
-.growText{
+
+.growText {
     font-size: 5rem;
 }
-.dotAchive{
+
+.dotAchive {
     color: #3B7700;
 }
-.green-span{
+
+.green-span {
     color: #3B7700;
 }
 
+.infoSec {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.ourTeam {
+    padding: var(--global-padding);
+
+}
+
+.cardWrap {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boxLine {
+    margin: 20px 0;
+    height: 5px;
+    background: var(--color-primary);
+    width: 100px;
+}
+.card{
+    margin-bottom:20px;
+}
+.cardBold {
+    padding: 0;
+    font-size: 15px;
+}
+
+.cardBoldB {
+    padding: 0;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.cardImg {
+    height: 200px;
+    width: 180px;
+    background: black;
+}
+
+.awards {
+    padding: var(--global-padding);
+
+}
+
+.awBg {
+    background: url(../assets//images/footballField.png);
+    background-size: cover;
+}
+
+.awardsWrap {
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.492);
+}
+
+.awardsWrap h2 {
+    color: var(--color-primary);
+}
+
+.awCard-Img {
+    height: 180px;
+    width: 150px;
+    background: black;
+    margin-bottom: 10px;
+}
+
+.awLine {
+    display: flex;
+}
+
+.awPhotos {
+    padding-top: 50px;
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.awCard p {
+    color: white;
+    font-size: 16px;
+}
+
+.awLine {
+    height: 3px;
+    width: 100%;
+    background: var(--color-primary);
+}
+
+.awTop {
+    display: flex;
+    gap: 30px;
+    align-items: baseline;
+}
 
 
-@media screen and  (max-width: 600px){
+@media screen and (max-width: 600px) {
+
+    .awPhotos {
+        justify-content: center;
+    }
+    .cardImg {
+    width: 250px;
+}
+.cardWrap {
+    justify-content: center;
+}
     .growCards {
         flex-direction: column;
         align-items: center;
     }
+
     .textGrowBox {
         justify-content: center;
         padding-top: 20px;
     }
+
     .baseImgBox-grow {
         background: url(/src/assets/images/img2.png);
         background-position: center;
     }
-    .enrollOverlay { 
+
+    .enrollOverlay {
         flex-direction: column-reverse;
     }
+
     .imgSection-enroll img {
         height: 1031px;
         margin-top: 22px;
     }
-    .text-enroll{
+
+    .text-enroll {
         text-align: center;
     }
-    
+
     .text-enroll hr {
         width: 100%;
         margin: 30px 0;
     }
+
     .enrollHead {
         font-size: 3rem;
         padding-top: 30px;
     }
+
     .imgSection-enroll {
         margin-top: -528px;
     }
+
     .t1 {
         padding-top: 80px;
     }
+
     .missionTextSection h2 {
         max-width: initial;
     }
+
     .missImg {
         margin-top: -110px;
         background-position-x: -200px;
         background-repeat: no-repeat;
     }
+
     .heroOverlay {
         display: flex;
         flex-direction: column;
@@ -213,13 +360,16 @@
         height: 100%;
         background: linear-gradient(to bottom, var(--color-primary) 40%, rgba(52, 152, 219, 0));
     }
+
     .hero {
         height: fit-content;
     }
+
     .textContent {
         padding-bottom: 5vh;
         padding-top: 6vh;
     }
+
     .textContent {
         display: flex;
         flex-direction: column;
@@ -227,7 +377,8 @@
         gap: 20px;
         text-align: center;
     }
-    .enroll{
+
+    .enroll {
         overflow-x: hidden;
     }
 }

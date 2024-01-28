@@ -55,7 +55,7 @@ export default function Home() {
                                 </div>
                                 <div className="textGrowBox">
                                     <div className="growIG">
-                                    <img src={ico1} alt="" />
+                                        <img src={ico1} alt="" />
                                     </div>
                                     <p>Learn techniques</p>
                                 </div>
@@ -73,7 +73,7 @@ export default function Home() {
                                 </div>
                                 <div className="textGrowBox">
                                     <div className="growIG">
-                                    <img src={ico2} alt="" />
+                                        <img src={ico2} alt="" />
                                     </div>
                                     <p>Grow your skill</p>
                                 </div>
@@ -91,7 +91,7 @@ export default function Home() {
                                 </div>
                                 <div className="textGrowBox">
                                     <div className="growIG">
-                                    <img src={ico3} alt="" />
+                                        <img src={ico3} alt="" />
                                     </div>
                                     <p>Become a greate <br /> Soccer player</p>
                                 </div>
@@ -108,29 +108,92 @@ export default function Home() {
 
             <section className="enroll">
                 <div className="enrollOverlay">
-                <div className="imgSection-enroll">
-                    <img src={enrollImg} alt="" />
-                </div>
+                    <div className="imgSection-enroll">
+                        <img src={enrollImg} alt="" />
+                    </div>
 
-                <div className="text-enroll">
-                    <p className="t1">Enroll in our</p>
-                    <h2 className='enrollHead'>Summer <br /> Soccer <br /> Camp</h2>
-                    <hr />
-                    <h2 className='enrollBoy'>For Boys & Girls</h2>
-                    <p className='t2'>(Ages 8 - 25)</p>
+                    <div className="text-enroll">
+                        <p className="t1">Enroll in our</p>
+                        <h2 className='enrollHead'>Summer <br /> Soccer <br /> Camp</h2>
+                        <hr />
+                        <h2 className='enrollBoy'>For Boys & Girls</h2>
+                        <p className='t2'>(Ages 8 - 25)</p>
 
-                    <div className="enrollButtom">
-                        <p className='enrollDate'>17 -26 <br />
-                            MAY 2024</p>
-                        <Link to={'/enroll'}><Button type={'bttn-alt'}>Enroll today!</Button></Link>
-                        <p className='erollReq'>
-                            Some documents will be <br />
-                            requested from the candidate in <br />
-                            order to move forward with the <br />
-                            Admission process:
-                        </p>
+                        <div className="enrollButtom">
+                            <p className='enrollDate'>17 -26 <br />
+                                MAY 2024</p>
+                            <Link to={'/enroll'}><Button type={'bttn-alt'}>Enroll today!</Button></Link>
+                            <p className='erollReq'>
+                                Some documents will be <br />
+                                requested from the candidate in <br />
+                                order to move forward with the <br />
+                                Admission process:
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+
+            <section className="infoSec">
+                <div className="ourTeam">
+                    <h2>Teams</h2>
+                    <div className="cardWrap">
+                        <div className="card">
+                            <div className="cardImg"></div>
+                            <div className="boxLine"></div>
+                            <p className="cardBoldB">Card Name</p>
+                            <p className="cardBold">Team Role</p>
+                        </div>
+                        <div className="card">
+                            <div className="cardImg"></div>
+                            <div className="boxLine"></div>
+                            <p className="cardBoldB">Card Name</p>
+                            <p className="cardBold">Team Role</p>
+                        </div>
+                        <div className="card">
+                            <div className="cardImg"></div>
+                            <div className="boxLine"></div>
+                            <p className="cardBoldB">Card Name</p>
+                            <p className="cardBold">Team Role</p>
+                        </div>
+                        <div className="card">
+                            <div className="cardImg"></div>
+                            <div className="boxLine"></div>
+                            <p className="cardBoldB">Card Name</p>
+                            <p className="cardBold">Team Role</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="awards">
+                    <div className="awBg">
+                        <div className="awardsWrap">
+                            <div className="awTop">
+                                <h2>Awards</h2>
+
+                                <div className="awLine">
+                                </div>
+                            </div>
+                            <div className="awPhotos">
+                                <div className="awCard">
+                                    <div className="awCard-Img"></div>
+                                    <p>CMAV Awwards for <br /> sports 2023</p>
+                                </div>
+                                <div className="awCard">
+                                    <div className="awCard-Img"></div>
+                                    <p>CMAV Awwards for <br /> sports 2023</p>
+                                </div>
+                                <div className="awCard">
+                                    <div className="awCard-Img"></div>
+                                    <p>CMAV Awwards for <br /> sports 2023</p>
+                                </div>
+                                <div className="awCard">
+                                    <div className="awCard-Img"></div>
+                                    <p>CMAV Awwards for <br /> sports 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

@@ -1,0 +1,40 @@
+.heroOverlay-a{
+    padding: var(--global-padding);
+    height: 100%;
+    background: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+.heroOverlay-a img{
+    height: 400px;
+    transform: translateY(40px);
+}
+.hero-a{
+    height: 65vh;
+    background: url(../assets/images/footballField.png) no-repeat; 
+    background-position: right;
+}
+.textContent-a{
+    padding-top: 15vh;
+}
+
+.aboutWrap{
+    padding: var(--global-padding);
+    padding-top: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .heroOverlay-a {
+        flex-direction: column;
+    }
+    .heroOverlay-a img {
+        height: 354px;
+        transform: translateY(14px);
+    }
+    .textContent-a {
+        padding-top: 9vh;
+    }
+}
