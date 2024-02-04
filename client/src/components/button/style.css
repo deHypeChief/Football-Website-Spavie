@@ -1,4 +1,4 @@
-button{
+button {
     height: 40px;
     width: fit-content;
     padding: 0px 25px;
@@ -8,13 +8,22 @@ button{
     font-weight: 500;
     color: var(--text-secondary-color);
 }
-.bttn-secondary{
+
+.bttn-secondary {
     background: none;
     border: var(--color-primary) 2px solid;
     color: var(--text-primary-color);
 }
-.bttn-alt{
+
+.bttn-alt {
     border-radius: 100px;
     background: red;
     color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    button {
+        padding: 0px 15px;
+    }
 }

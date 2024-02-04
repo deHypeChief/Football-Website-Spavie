@@ -1,11 +1,31 @@
 import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
-  name: {
+  legalNames: {
     type: String,
     required: true
   },
-  surname: {
+  email: {
+    type: String,
+    required: true
+  },
+  playingPosition: {
+    type: String,
+    required: true
+  },
+  homeAddress: {
+    type: String,
+    required: true
+  },
+  dateOfBirth: {
+    type: String,
+    required: true
+  },
+  countryOfBirth: {
+    type: String,
+    required: true
+  },
+  language: {
     type: String,
     required: true
   },
@@ -13,28 +33,18 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  residence: {
-    type: String,
-    required: true
-  },
-  dateOfBirth: {
-    type: Date,
-    required: true
-  },
-  email: {
-    type: String,
-    unique: true,
-    required: true
-  },
-  phoneNo: {
-    type: String,
-    unique: true,
-    required: true
-  },
-  foundUs: {
-    type: String,
-    required: true
-  }
+
 });
 
 export default mongoose.model('User', userSchema);
+
+// legal names
+// Email
+// phone number
+// playing position
+// home address
+// birth Date
+// county of birth
+// language and nationality
+// legal id international passport
+// medical Condition

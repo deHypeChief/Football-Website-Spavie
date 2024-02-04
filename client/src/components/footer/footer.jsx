@@ -7,6 +7,26 @@ import logo from "../../assets/icons/Black Logo Png.png"
 export default function Footer() {
     return (
         <>
+            <section className="footerInfo">
+                <div className="footerMap">
+                    <h2>
+                        Our Facility
+                    </h2>
+                    <div className="map">
+
+                    </div>
+                    <div className="footerLine"></div>
+                </div>
+
+                <div className="footerTour">
+                <h2>
+                        Take A Tour
+                    </h2>
+                    <div className="map">
+
+                    </div>
+                </div>
+            </section>
             <section className="footerTop" id="contact">
                 <div className="footerBox">
                     <div className="imgfooterBox">

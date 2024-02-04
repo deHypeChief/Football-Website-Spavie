@@ -46,6 +46,30 @@ footer p{
     width: 60%;
 }
 
+.footerInfo{
+    padding: var(--global-padding);
+    margin-top: 100px;
+}
+.footerMap{
+    text-align: center;
+}
+.map{
+    height: 550px;
+    background: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footerLine{
+    height: 2px;
+    width: 100%;
+    background: gray;
+    margin: 40px 0;
+}
+
+.footerTour{
+    margin-top: 50px;
+}
+
 
 @media screen and (max-width: 600px){
     .footerTop{

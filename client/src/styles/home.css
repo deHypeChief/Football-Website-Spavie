@@ -3,9 +3,14 @@
     background: url(../assets/images/footballField.png) no-repeat;
     background-position: right;
     background-size: cover;
+    overflow-y: hidden;
 }
 
 .heroOverlay {
+    height: 65vh;
+
+position: relative;
+overflow: hidden;
     display: flex;
     justify-content: space-between;
     padding: var(--global-padding);
@@ -37,13 +42,13 @@
 
 /* grow */
 .growContent {
-    padding: var(--global-padding);
     padding-top: 50px;
 }
 
 .growCards {
     display: flex;
     justify-content: space-between;
+    padding: var(--global-padding);
 }
 
 .baseImgBox-grow {
@@ -51,6 +56,34 @@
     height: 350px;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding: var(--global-padding);
+}
+.divMLine{ 
+    height: 2px;
+    width: 100%;
+    background: gray;
+    margin: 40px 0;
+}
+.growTextContent{
+    padding: var(--global-padding);
+
+}
+.gowbaseImg{
+    padding: var(--global-padding);
+
+}
+.dot{
+    height: 6px;
+    width: 6px;
+    background-color: black;
+    border-radius: 1000px;
+    margin-bottom: 50px;
+}
+.m-card{
+    margin-top: -44px;
+}
+.grn{
+    background: #3B7700;
 }
 
 
@@ -283,6 +316,33 @@
     gap: 30px;
     align-items: baseline;
 }
+.awTop h2 {
+    width: 90%;
+}
+.mi{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+}
+
+
+.spText{
+z-index: 1;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.354);
+    position: absolute;
+}
+.spText:nth-child(2){
+    left: -40vh;
+    top: -50vh;
+    font-size: 22rem;
+}
+.spText:nth-child(1){
+    right: -10vh;
+    bottom: -30vh;
+    font-size: 22rem;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -380,5 +440,8 @@
 
     .enroll {
         overflow-x: hidden;
+    }
+    .m-card{
+        margin-top: 20px;
     }
 }

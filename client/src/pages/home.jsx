@@ -24,6 +24,10 @@ export default function Home() {
                         <Link to={'/enroll'}><Button type={'bttn-alt'}>Enroll today!</Button></Link>
                     </div>
                     <img src={heroImg} alt="" />
+                    <div className="spaTop">
+                        <h1 className="spText">Sparvi</h1>
+                        <h1 className="spText">Sparvi</h1>
+                    </div>
                 </div>
             </section>
 
@@ -35,15 +39,18 @@ export default function Home() {
                 <div className="missImg"></div>
             </section>
 
-
             <section className="grow">
                 <div className="growContent">
                     <div className="growTextContent">
                         <p>Start training with us  . <span className='green-span'>Grow that potential </span></p>
                     </div>
+
+            <div className="divMLine"></div>
+
+
                     <div className="growCards">
 
-                        <div className="card">
+                        <div className="m-card">
                             <div className="dot"></div>
 
                             <h1 className="growText">
@@ -61,10 +68,10 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="card">
+                        <div className="m-card">
                             <div className="dot"></div>
 
-                            <h1 className="growText">
+                            <h1 className="growText mi">
                                 Grow
                             </h1>
                             <div className="boxGrowText">
@@ -79,8 +86,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="card">
-                            <div className="dot"></div>
+                        <div className="m-card">
+                            <div className="dot grn"></div>
 
                             <h1 className="growText dotAchive">
                                 & Win
@@ -134,7 +141,6 @@ export default function Home() {
                 </div>
             </section>
 
-
             <section className="infoSec">
                 <div className="ourTeam">
                     <h2>Teams</h2>
@@ -169,7 +175,7 @@ export default function Home() {
                     <div className="awBg">
                         <div className="awardsWrap">
                             <div className="awTop">
-                                <h2>Awards</h2>
+                                <h2>Player Rating</h2>
 
                                 <div className="awLine">
                                 </div>
