@@ -2,6 +2,8 @@ import { BsYoutube } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { ImFacebook } from "react-icons/im";
+
+import tourVid from '../../assets/tourVideo.mp4'
 import './style.css'
 import logo from "../../assets/icons/Black Logo Png.png"
 export default function Footer() {
@@ -13,17 +15,22 @@ export default function Footer() {
                         Our Facility
                     </h2>
                     <div className="map">
-
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9848.686686784577!2d3.3222053080679355!3d6.500244290061358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ebcf1bdec27%3A0x81c7a8d542513587!2sLawanson%2C%20Lagos!5e0!3m2!1sen!2sng!4v1707041393325!5m2!1sen!2sng" 
+                    style={{
+                        border: 0
+                    }} 
+                    allowFullScreen="" loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div className="footerLine"></div>
                 </div>
 
                 <div className="footerTour">
-                <h2>
+                    <h2>
                         Take A Tour
                     </h2>
                     <div className="map">
-
+                        <video src={tourVid} controls></video>
                     </div>
                 </div>
             </section>
@@ -48,9 +55,9 @@ export default function Footer() {
                     </p>
                 </div>
                 <div className="footerBox">
-                <p className="fHeader">Email Us</p>
+                    <p className="fHeader">Email Us</p>
                     <p>
-                    info@sparvifootballacademy.com
+                        info@sparvifootballacademy.com
                     </p>
                 </div>
 

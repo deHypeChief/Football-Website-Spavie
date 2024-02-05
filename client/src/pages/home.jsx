@@ -23,6 +23,7 @@ export default function Home() {
                         <h1>Summer <br /> Soccer Camp</h1>
                         <Link to={'/enroll'}><Button type={'bttn-alt'}>Enroll today!</Button></Link>
                     </div>
+                    
                     <img src={heroImg} alt="" />
                     <div className="spaTop">
                         <h1 className="spText">Sparvi</h1>

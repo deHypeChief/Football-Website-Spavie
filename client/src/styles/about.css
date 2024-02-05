@@ -4,8 +4,8 @@
     background: var(--color-primary);
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
-    
+    position: relative;
+overflow: hidden;
 }
 .heroOverlay-a img{
     height: 400px;
@@ -25,6 +25,10 @@
     padding-top: 100px;
 }
 
+.heroOverlay-a .spaTop .spText:nth-child(1){
+       
+}
+
 
 @media screen and (max-width: 600px) {
     .heroOverlay-a {
@@ -36,5 +40,8 @@
     }
     .textContent-a {
         padding-top: 9vh;
+    }
+    .hero-a{
+        height: 90vh;
     }
 }

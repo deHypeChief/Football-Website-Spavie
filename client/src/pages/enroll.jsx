@@ -81,43 +81,49 @@ export default function Enroll() {
                         </p>
 
                         <div className="divForm">
-                            <div className="form-group">
-                                <div className="inputWrap">
-                                    <p>Player Name</p>
-                                    <input placeholder='Player Name' type="text" name="name" id="" required />
-                                </div>
-                                <div className="inputWrap">
-                                    <p>Player Surname</p>
-                                    <input placeholder='Player Surname' type="text" name="surname" id="" required />
-                                </div>
-                                <div className="inputWrap">
-                                    <p>Player nationality</p>
-                                    <input placeholder='Player nationality' type="text" name="nationality" id="" required />
-                                </div>
-                                <div className="inputWrap">
-                                    <p>State of residence</p>
-                                    <input placeholder='State of residence' type="text" name="residence" id="" required />
-                                </div>
-                                <div className="inputWrap">
-                                    <p>Player date of birth</p>
-                                    <input placeholder='Player date of birth' type="date" name="dateOfBirth" id="" required />
-                                </div>
-                            </div>
+
 
                             <div className="form-group">
                                 <div className="inputWrap">
-                                    <p>Contact  Email</p>
-                                    <input placeholder='Your Email' type="text" name="email" id="" required />
+                                    <p>Legal Name</p>
+                                    <input placeholder='Fullname' type="text" name="name" id="" required />
                                 </div>
                                 <div className="inputWrap">
-                                    <p>Telephone</p>
-                                    <input placeholder='Your Phone Number' type="tel" name="phoneNo" id="" required />
+                                    <p>Email</p>
+                                    <input placeholder='Email' type="text" name="email" id="" required />
                                 </div>
                                 <div className="inputWrap">
-                                    <p>How did you find us</p>
-                                    <input placeholder='How did you find us' type="text" name="foundUs" id="" required />
+                                    <p>Phone Number</p>
+                                    <input placeholder='Phone Number' type="text" name="phoneNumber" id="" required />
                                 </div>
                             </div>
+
+
+                            <div className="form-group">
+                                <div className="inputWrap">
+                                    <p>Home Address</p>
+                                    <input placeholder='Home Address' type="text" name="homeAddress" id="" required />
+                                </div>
+                                <div className="inputWrap">
+                                    <p>State</p>
+                                    <input placeholder='State' type="text" name="state" id="" required />
+                                </div>
+                                <div className="inputWrap">
+                                    <p>Nationality</p>
+                                    <input placeholder='Nationality' type="text" name="nationality" id="" required />
+                                </div>
+                                <div className="inputWrap">
+                                    <p>Birth Date</p>
+                                    <input placeholder='Birth Date' type="text" name="dateOfBirth" id="" required />
+                                </div>
+                                <div className="inputWrap">
+                                    <p>Langues</p>
+                                    <input placeholder='Langues' type="text" name="langues" id="" required />
+                                </div>
+                            </div>
+
+                            
+
                         </div>
                         <button type="submit" disabled={mutation.isLoading}>
                             {mutation.isLoading ? 'Submitting...' : 'Submit'}

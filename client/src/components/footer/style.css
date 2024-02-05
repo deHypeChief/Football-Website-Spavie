@@ -69,6 +69,10 @@ footer p{
 .footerTour{
     margin-top: 50px;
 }
+.map video{
+    width: 100%;
+    height: 100%;
+}
 
 
 @media screen and (max-width: 600px){
