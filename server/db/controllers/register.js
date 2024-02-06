@@ -4,39 +4,42 @@ const registerUser = async (req, res) => {
 
 	const { 
 		name,
-		surname,
-		nationality,
-		residence,
-		dateOfBirth,
-		email,
-		phoneNo,
-		foundUs
+        email,
+        phoneNumber,
+        homeAddress,
+        state,
+        nationality,
+        dateOfBirth,
+        langues,
+        medicalCondition
 	} = req.body;
 
 
 	// check fields
 	if (
-		!name || 
-		!surname ||
-		!nationality ||
-		!residence ||
-		!dateOfBirth ||
-		!email ||
-		!phoneNo ||
-		!foundUs 
+		!name ||
+        !email ||
+        !phoneNumber ||
+        !homeAddress ||
+        !state ||
+        !nationality ||
+        !dateOfBirth ||
+        !langues ||
+        !medicalCondition
 	) {
 		res. status(500).json({ error: ' Some fields are missing' });
 	}
 
 	const user = new User({
 		name,
-		surname,
-		nationality,
-		residence,
-		dateOfBirth,
-		email,
-		phoneNo,
-		foundUs
+        email,
+        phoneNumber,
+        homeAddress,
+        state,
+        nationality,
+        dateOfBirth,
+        langues,
+        medicalCondition
 	});
 
 	if (user) {
@@ -50,10 +53,12 @@ const registerUser = async (req, res) => {
 	}
 };
 
+
+
+
 const getUsers = async (req, res) => {
 	const getUsers = await User.find()
 	res.status(200).json(getUsers)
 }
-// .select()
 
 export { getUsers, registerUser}
