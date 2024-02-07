@@ -1,6 +1,6 @@
 import User from '../models/registerModel.js';
 
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer'
 let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {

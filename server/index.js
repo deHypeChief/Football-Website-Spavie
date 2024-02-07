@@ -5,14 +5,14 @@ import cors from 'cors'
 
 import userRoute from './db/routes/registerRoute.js';
 dotenv.config()
-const app = express();
+const app = express()
 
 const DB_URL = process.env.NODE_ENV === 'prod' ? process.env.DB_URL : process.env.DB_LOCAL
 
 const connectToMongoDB = () => {
   mongoose.connect(DB_URL);
 
-  const db = mongoose.connection;
+  const db = mongoose.connection
 
   db.on('error', (error) => {
     console.error('MongoDB connection error:', error)
