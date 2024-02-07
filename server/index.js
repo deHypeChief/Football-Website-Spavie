@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose, { connect } from 'mongoose';
-import dotenv from 'dotenv' 
+import dotenv from 'dotenv';
 import cors from 'cors'
 
 import userRoute from './db/routes/registerRoute.js';

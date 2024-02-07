@@ -101,7 +101,7 @@ export default function Home() {
                                     <div className="growIG">
                                         <img src={ico3} alt="" />
                                     </div>
-                                    <p>Become a greate <br /> Soccer player</p>
+                                    <p>Become a great <br /> Soccer player</p>
                                 </div>
                             </div>
 

@@ -95,9 +95,12 @@ form{
         padding-bottom: 15px;
     }
     .joinus h3 {
-        padding-bottom: 15px;
+        padding: 20px 30px 10px;
     }
     .hero-e{
         height: fit-content;
+    }
+    .Join-form {
+        padding: 0;
     }
 }
