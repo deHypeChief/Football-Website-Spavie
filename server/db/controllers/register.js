@@ -59,7 +59,7 @@ const registerUser = async (req, res) => {
         // Define email content
         let mailOptions = {
             from: 'dev.hype7@gmail.com',
-            to: 'dev.hype7@gmail.com',
+            to: 'info@sparvifootballacademy.com',
             subject: 'New Player',
             text: 'This is a test email sent from Node.js.'
         };
