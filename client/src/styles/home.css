@@ -57,6 +57,8 @@ overflow: hidden;
     margin-top: 100px;
     margin-bottom: 100px;
     padding: var(--global-padding);
+    background-position-y: -300px ;
+
 }
 .divMLine{ 
     height: 2px;
@@ -387,8 +389,8 @@ z-index: 1;
     }
 
     .baseImgBox-grow {
-        background: url(/src/assets/images/img2.png);
         background-position: center;
+        background-position-y: 1px ;
     }
 
     .enrollOverlay {
