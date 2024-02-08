@@ -18,6 +18,9 @@
 }
 
 /* general */
+.space{
+    margin-top: 70px;
+}
 main{
     min-height: 100vh;
 }

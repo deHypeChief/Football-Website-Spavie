@@ -33,6 +33,7 @@ function Layout() {
         <QueryClientProvider client={queryClient}>
             <BrowserRouter>
                 <Navbar />
+                <div className="space"></div>
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/enroll' element={<Enroll />} />
