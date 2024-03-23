@@ -122,7 +122,7 @@ export default function Enroll() {
 
                     <form onSubmit={handleSubmit}>
                         <p className="topFormText">
-                            Kindly complete the required information,<br /> and we will respond to your application shortly. <br/>
+                            Kindly complete the required information, and we will respond to your application shortly. <br/>
                             You would need to pay a fee of 20000 Naira as an appication fee
                         </p>
 
