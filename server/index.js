@@ -28,13 +28,9 @@ connectToMongoDB();
 const PORT = process.env.PORT || 3000;
 
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://sparvifootballacademy.vercel.app');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  res.header('Access-Control-Allow-Credentials', 'true'); 
-  next();
-});
+app.use(cors({
+  origin: process.env.NODE_ENV == "dev" ? 'http://localhost:5173' : 'sparvifootballacademy.vercel.app',
+}));
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 

@@ -4,31 +4,26 @@ import axios from 'axios';
 import enrollHeroImg from '../assets/images/img13.png'
 import ballImg from '../assets/images/img12.png'
 
-import { useMutation } from 'react-query';
+import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
+
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 // import { Notify_Success } from '../components/Pop-notify/notify';
 
+// https://spavie-api.vercel.app
 const postFormData = async (formData) => {
-    try {
-        const response = await axios.post('https://spavie-api.vercel.app/api/user/register', formData, {
+        return await axios.post('https://spavie-api.vercel.app/api/user/register', formData, {
             withCredentials: true,  // Include credentials
+            orign: window.location.origin,
             headers: {
                 'Content-Type': 'application/json',  // Set your content type and other headers
             },
         });
-        return response.data;
-    } catch (error) {
-        console.log(error);
-        throw new Error(error);
-    }
 };
 
 export default function Enroll() {
-    const mutation = useMutation(postFormData);
-    // const NavTo = useNavigate()
-
-
+    const NavTo = useNavigate()
+    const [loading, setLoading] = useState()
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -49,23 +44,59 @@ export default function Enroll() {
         }));
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        // Process form data here
+    const f_KEY = 'FLWPUBK_TEST-cebd8bc19f2ed4821dc70bd98e3499c1-X'
+    const config = {
+        public_key: f_KEY,
+        tx_ref: Date.now(),
+        amount: 20000,
+        currency: 'NGN',
+        payment_options: 'card,mobilemoney,ussd',
+        customer: {
+            email: formData.email,
+            phone_number: formData.phoneNumber,
+            name: formData.name,
+        },
+        customizations: {
+            title: "Appication Fee",
+            description: 'Sparvi Football Appication Fee',
+        },
+    }
+
+    const handleFlutterPayment = useFlutterwave(config);
+
+    const handleSubmit =  (e) => {
+        e.preventDefault();        
+        setLoading(true)
+        alert("You will be redirected to the payment page")
         console.log(formData);
-        try {
-            await mutation.mutateAsync(formData);
-            // Form submitted successfully
-            console.log('Form submitted successfully!');
-            alert("Your account has been created")
-            // NavTo("/")
 
-        } catch (error) {
-            // Handle error
-            console.error('Error submitting form:', error.message);
-            alert("Their was an error creating your account")
+        handleFlutterPayment({
+            callback: (response) => {
+                console.log(response);
+                if (response.status == "successful") {
+                    alert("your payment was "+response.status +". Check your email for the recipt")    
 
-        }
+                    postFormData(formData)
+                    .then(()=>{
+                        console.log('Form submitted successfully!');
+                        alert("Your account has been created")
+                        NavTo("/")
+                    }).catch((error)=>{
+                        console.error('Error submitting form:', error.message);
+                        alert("Their was an error creating your account")
+                    }).finally(()=>{
+                        setLoading(false)
+                    })
+                } else {
+                    alert("Error making payment")
+                }
+                closePaymentModal() // this will close the modal programmatically
+            },
+            onClose: (e) => {
+                console.log(e);
+                setLoading(false)
+            },
+        });
     };
 
 
@@ -91,7 +122,8 @@ export default function Enroll() {
 
                     <form onSubmit={handleSubmit}>
                         <p className="topFormText">
-                            Kindly complete the required information,<br /> and we will respond to your application shortly.
+                            Kindly complete the required information,<br /> and we will respond to your application shortly. <br/>
+                            You would need to pay a fee of 20000 Naira as an appication fee
                         </p>
 
                         <div className="divForm">
@@ -347,8 +379,8 @@ export default function Enroll() {
                             </div>
 
                         </div>
-                        <button type="submit" disabled={mutation.isLoading}>
-                            {mutation.isLoading ? 'Submitting...' : 'Submit'}
+                        <button type="submit" disabled={loading}>
+                            {loading ? "loading..." : "Procced"} 
                         </button>
                     </form>
                 </div>

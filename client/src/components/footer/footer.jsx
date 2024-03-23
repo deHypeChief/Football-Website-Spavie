@@ -42,10 +42,7 @@ export default function Footer() {
                 </div>
                 <div className="footerBox">
                     <p className="fHeader">Our Address</p>
-                    <p>@Teslim Balogun Stadium, <br />
-                        Temporal Office: 3, Rafiu Ipaye Street. <br />
-                        Off Agunlejika, ijeshatedo, Surulere, <br />
-                        Lagos state.
+                    <p>3, Rafiu Ipaye Street. Off Agunlejika, <br/> Ijeshatedo, surulere Lagos state
                     </p>
                 </div>
                 <div className="footerBox">
