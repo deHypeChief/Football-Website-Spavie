@@ -15,7 +15,7 @@ export default function Footer() {
                         Our Facility
                     </h2>
                     <div className="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9848.686686784577!2d3.3222053080679355!3d6.500244290061358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ebcf1bdec27%3A0x81c7a8d542513587!2sLawanson%2C%20Lagos!5e0!3m2!1sen!2sng!4v1707041393325!5m2!1sen!2sng" 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1653064176526!2d3.321791274045762!3d6.500746623429314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ebc2d4f9691%3A0xb496a296369aa599!2s3%20Rafiu%20Ipaye%20St%2C%20Lawanson%2C%20Lagos%20102215%2C%20Lagos!5e0!3m2!1sen!2sng!4v1711396661278!5m2!1sen!2sng" 
                     style={{
                         border: 0
                     }} 
