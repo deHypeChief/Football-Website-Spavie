@@ -144,7 +144,7 @@ export default function Home() {
             </section>
 
             <section className="infoSec">
-                <div className="ourTeam">
+                {/* <div className="ourTeam">
                     <h2>Teams</h2>
                     <div className="cardWrap">
                         <div className="card">
@@ -172,7 +172,7 @@ export default function Home() {
                             <p className="cardBold">Team Role</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="awards">
                     <div className="awBg">
                         <div className="awardsWrap">
