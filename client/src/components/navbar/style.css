@@ -37,6 +37,13 @@ nav{
     width: 60%;
 }
 
+.floatingWhatspapp{
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+}
+
 @media screen and (max-width: 600px) {
     nav{
         padding: 0 15px;
