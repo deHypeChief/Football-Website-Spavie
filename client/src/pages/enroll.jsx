@@ -6,7 +6,7 @@ import ballImg from '../assets/images/img12.png'
 
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
 
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 // import { Notify_Success } from '../components/Pop-notify/notify';
 
