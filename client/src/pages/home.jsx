@@ -146,38 +146,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-            <section className="infoSec">
-                <div className="ourTeam">
-                    <h2>Teams</h2>
-                    <div className="cardWrap">
-                        <div className="card">
-                            <div className="cardImg"></div>
-                            <div className="boxLine"></div>
-                            <p className="cardBoldB">Card Name</p>
-                            <p className="cardBold">Team Role</p>
-                        </div>
-                        <div className="card">
-                            <div className="cardImg"></div>
-                            <div className="boxLine"></div>
-                            <p className="cardBoldB">Card Name</p>
-                            <p className="cardBold">Team Role</p>
-                        </div>
-                        <div className="card">
-                            <div className="cardImg"></div>
-                            <div className="boxLine"></div>
-                            <p className="cardBoldB">Card Name</p>
-                            <p className="cardBold">Team Role</p>
-                        </div>
-                        <div className="card">
-                            <div className="cardImg"></div>
-                            <div className="boxLine"></div>
-                            <p className="cardBoldB">Card Name</p>
-                            <p className="cardBold">Team Role</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </>
     )
 }
