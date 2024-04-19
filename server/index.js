@@ -29,7 +29,7 @@ const PORT = process.env.PORT || 3000;
 
 
 app.use(cors({
-  origin: process.env.NODE_ENV == "dev" ? 'http://localhost:5173' : 'sparvifootballacademy.vercel.app',
+  origin: process.env.NODE_ENV == "dev" ? 'http://localhost:5173' : 'https://sparvifootballacademy.org',
 }));
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
